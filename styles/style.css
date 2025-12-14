@@ -1,0 +1,49 @@
+:root {
+  --active-color: black;
+  --inactive-color: #b2b2b2;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-wrapper {
+  padding-inline: 4rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.nav {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1rem;
+  padding: 2rem;
+  padding-left: 0;
+
+  height: 12vh;
+}
+
+.tabs {
+  cursor: pointer;
+  height: max-content;
+
+  color: var(--inactive-color);
+}
+
+.active {
+  border-bottom: 2px solid var(--active-color);
+  color: var(--active-color);
+}
+
+.review {
+  display: grid;
+  background-color: var(--active-color);
+  place-content: center;
+  color: white;
+  height: 45vh;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  border-radius: 1rem;
+}
